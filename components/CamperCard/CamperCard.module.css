@@ -25,11 +25,12 @@
   display: flex;
   align-items: center;
   position: relative;
-  width: 320px;
-  height: 220px;
+  width: 290px;
+  height: 310px;
   overflow: hidden;
-  background-color: #f2f4f7;
+  /* background-color: #f2f4f7; */
   flex: 0 0 320px;
+  padding: 24px;
 }
 
 .image {

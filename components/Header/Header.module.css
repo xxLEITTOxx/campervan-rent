@@ -58,7 +58,7 @@
   color: #e44848;
 }
 
-.navigation a.active::after {
+/* .navigation a.active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -66,4 +66,4 @@
   bottom: -20px;
   height: 1px;
   background-color: #e44848;
-}
+} */
