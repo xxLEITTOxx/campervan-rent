@@ -9,19 +9,84 @@ const Features = ({ camper }: FeaturesProps) => {
   const features = [];
 
   if (camper.transmission === "automatic") {
-    features.push({ name: "Automatic", icon: "⚙️" });
+    features.push({
+      name: "Automatic",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#diagram" />
+        </svg>
+      ),
+    });
   }
   if (camper.AC) {
-    features.push({ name: "AC", icon: "❄️" });
+    features.push({
+      name: "AC",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#wind" />
+        </svg>
+      ),
+    });
   }
   if (camper.engine === "petrol") {
-    features.push({ name: "Petrol", icon: "⛽" });
+    features.push({
+      name: "Petrol",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#fuel-pump" />
+        </svg>
+      ),
+    });
   }
   if (camper.kitchen) {
-    features.push({ name: "Kitchen", icon: "🍳" });
+    features.push({
+      name: "Kitchen",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#cup-hot" />
+        </svg>
+      ),
+    });
   }
   if (camper.radio) {
-    features.push({ name: "Radio", icon: "📻" });
+    features.push({
+      name: "Radio",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#ui-radios" />
+        </svg>
+      ),
+    });
   }
   if (camper.bathroom) {
     features.push({
@@ -34,25 +99,90 @@ const Features = ({ camper }: FeaturesProps) => {
           viewBox="0 0 32 32"
           aria-hidden
         >
-          <use href="#ph_shower" />
+          <use href="/sprite.svg#ph_shower" />
         </svg>
       ),
     });
   }
   if (camper.refrigerator) {
-    features.push({ name: "Refrigerator", icon: "❄️" });
+    features.push({
+      name: "Refrigerator",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#solar_fridge-outline" />
+        </svg>
+      ),
+    });
   }
   if (camper.microwave) {
-    features.push({ name: "Microwave", icon: "📡" });
+    features.push({
+      name: "Microwave",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#lucide_microwave" />
+        </svg>
+      ),
+    });
   }
   if (camper.gas) {
-    features.push({ name: "Gas", icon: "🔥" });
+    features.push({
+      name: "Gas",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#hugeicons_gas-stove" />
+        </svg>
+      ),
+    });
   }
   if (camper.water) {
-    features.push({ name: "Water", icon: "💧" });
+    features.push({
+      name: "Water",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#ion_water-outline" />
+        </svg>
+      ),
+    });
   }
   if (camper.TV) {
-    features.push({ name: "TV", icon: "📺" });
+    features.push({
+      name: "TV",
+      icon: (
+        <svg
+          className={css.svgIcon}
+          width="20"
+          height="20"
+          viewBox="0 0 32 32"
+          aria-hidden
+        >
+          <use href="/sprite.svg#tv" />
+        </svg>
+      ),
+    });
   }
 
   const vehicleDetails = [

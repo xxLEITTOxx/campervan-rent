@@ -20,6 +20,12 @@
   width: 100%;
 }
 
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .imageWrapper {
   height: 100%;
   display: flex;
@@ -47,6 +53,16 @@
   padding: 12px;
   pointer-events: none;
 } */
+
+.imageOverlay {
+  position: absolute;
+  inset: 12px 12px auto auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  pointer-events: none;
+  z-index: 2;
+}
 
 .imageOverlay .price {
   pointer-events: auto;
