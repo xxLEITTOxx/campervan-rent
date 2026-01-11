@@ -1,0 +1,179 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 64px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.headerTop {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-start; */
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #101828;
+  margin: 0;
+  flex: 1;
+  padding-right: 16px;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #101828;
+}
+
+
+
+.meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.rating,
+.location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+}
+
+.rating svg,
+.location svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+  margin: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 44px;
+}
+
+.galleryItem {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f2f4f7;
+}
+
+.galleryImage {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.mainContent {
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.tabs {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid #dadde1;
+  margin-bottom: 44px;
+}
+
+.tab {
+  padding: 0 0 24px 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #475467;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.tab:hover {
+  color: #101828;
+}
+
+.tab.active {
+  color: #101828;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 5px;
+  background-color: #e44848;
+  border-radius: 2px 2px 0 0;
+}
+
+.tabContent {
+  min-height: 200px;
+}
+
+.sidebar {
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .mainContent,
+  .sidebar {
+    flex: 1 1 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.empty {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.empty p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #6c717b;
+  margin: 0;
+}

@@ -1,0 +1,24 @@
+.footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #dadde1;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  padding: 40px 64px;
+}
+
+.content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+}
