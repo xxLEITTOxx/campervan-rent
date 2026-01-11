@@ -58,61 +58,31 @@ const Filters = () => {
     switch (key) {
       case "AC":
         return (
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
+          <svg width="32" height="32">
             <use href="/sprite.svg#wind" />
           </svg>
         );
       case "automatic":
         return (
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
+          <svg width="32" height="32">
             <use href="/sprite.svg#diagram" />
           </svg>
         );
       case "kitchen":
         return (
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
+          <svg width="32" height="32">
             <use href="/sprite.svg#hugeicons_gas-stove" />
           </svg>
         );
       case "TV":
         return (
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
+          <svg width="32" height="32">
             <use href="/sprite.svg#tv" />
           </svg>
         );
       case "shower":
         return (
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
+          <svg width="32" height="32">
             <use href="/sprite.svg#ph_shower" />
           </svg>
         );
@@ -201,7 +171,7 @@ const Filters = () => {
                 className={`${css.equipmentButton} ${isActive ? css.active : ""}`}
               >
                 {getEquipmentIcon(item.key)}
-                <span>{item.label}</span>
+                <span className={css.span_equipment}>{item.label}</span>
               </button>
             );
           })}
@@ -218,7 +188,7 @@ const Filters = () => {
                 key={type.value}
                 type="button"
                 onClick={() => handleVehicleTypeChange(type.value)}
-                className={`${css.vehicleTypeButton} ${isActive ? css.active : ""}`}
+                className={`${css.equipmentButton} ${isActive ? css.active : ""}`}
               >
                 {getVehicleIcon(type.value)}
                 <span>{type.label}</span>

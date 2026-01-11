@@ -1,6 +1,6 @@
 .filters {
   width: 360px;
-  padding: 24px;
+
   background-color: #ffffff;
   border-radius: 20px;
   height: fit-content;
@@ -72,9 +72,13 @@
 }
 
 .equipmentGrid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  column-gap: 8px;
 }
 
 .equipmentButton {
@@ -83,17 +87,24 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 16px;
-  background-color: #f2f4f7;
-  border: 1px solid transparent;
-  border-radius: 10px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dadde1;
+  border-radius: 12px;
+  width: 112px;
+  height: 96px;
   cursor: pointer;
   transition: all 0.2s;
-  min-height: 95px;
+  background: transparent;
+}
+
+.span_equipment {
+  text-align: center;
 }
 
 .equipmentButton:hover {
-  background-color: #e8eaed;
+  border: 1px solid #e44848;
 }
 
 .equipmentButton.active {
@@ -120,9 +131,10 @@
 }
 
 .vehicleTypeGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  column-gap: 8px;
 }
 
 .vehicleTypeButton {
@@ -185,4 +197,3 @@
 .searchButton:hover {
   background-color: #d84343;
 }
-

@@ -12,7 +12,7 @@ const Header = () => {
     <header className={css.header}>
       <div className={css.container}>
         <Link href="/" className={css.logo}>
-          TravelTrucks
+          <img src="/logo.svg" alt="TravelTrucks" width={136} height={16} />
         </Link>
         <div className={css.header_nav_styling}>
           <nav aria-label="Main Navigation">
