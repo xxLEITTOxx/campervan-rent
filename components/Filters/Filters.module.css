@@ -37,7 +37,8 @@
 .locationInput svg {
   width: 20px;
   height: 20px;
-  color: #475467;
+  fill: #94a3b8;
+  /* lighter icon color for non-active */
   flex-shrink: 0;
 }
 
@@ -47,13 +48,28 @@
   outline: none;
   font-size: 16px;
   line-height: 1.5;
-  color: #101828;
+  color: #475467;
+  /* lighter text when non-active */
   background: transparent;
 }
 
 .input::placeholder {
   color: #475467;
 }
+
+/* Hover / active (bottom) state: make background white and text/icon darker */
+.locationInput:hover,
+.locationInput:focus-within {
+
+  border-color: #101828;
+}
+
+.locationInput:hover svg,
+.locationInput:focus-within svg {
+  fill: #101828;
+}
+
+
 
 .sectionTitle {
   font-size: 20px;

@@ -6,6 +6,7 @@
   display: flex;
   gap: 24px;
   align-items: flex-start;
+  padding: 24px;
 }
 
 .card:hover {
@@ -41,6 +42,7 @@
 
 .image {
   object-fit: cover;
+  object-position: center;
   border-radius: 12px;
 }
 
@@ -82,7 +84,7 @@
 }
 
 .content {
-  padding: 24px;
+  padding-left: 24px;
   flex: 1 1 auto;
 }
 
@@ -90,7 +92,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 16px;
+
 }
 
 .title {

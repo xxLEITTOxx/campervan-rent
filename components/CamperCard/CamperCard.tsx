@@ -61,22 +61,12 @@ const CamperCard = ({ camper }: CamperCardProps) => {
                   onClick={handleFavoriteClick}
                 >
                   {favorite ? (
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="#E54848"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 4.01 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 17.99 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    <svg width="32" height="32" fill="#e44848">
+                      <use href="/sprite.svg#heart" />
                     </svg>
                   ) : (
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#374151"
-                      strokeWidth="1.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                    <svg width="32" height="32">
+                      <use href="/sprite.svg#heart" />
                     </svg>
                   )}
                 </button>
@@ -85,23 +75,16 @@ const CamperCard = ({ camper }: CamperCardProps) => {
           </div>
           <div className={css.meta}>
             <div className={css.rating}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFC531">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              <svg width="32" height="32" fill="#ffc531">
+                <use href="/sprite.svg#star" />
               </svg>
               <span>
                 {camper.rating}({camper.reviews?.length || 0} Reviews)
               </span>
             </div>
             <div className={css.location}>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
+              <svg width="16" height="16">
+                <use href="/sprite.svg#map-16" />
               </svg>
               <span>{camper.location}</span>
             </div>
