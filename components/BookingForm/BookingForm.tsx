@@ -43,12 +43,12 @@ const BookingForm = (_props: BookingFormProps) => {
       )}
       <div className={css.formWrapper}>
         <h2 className={css.title}>Book your campervan now</h2>
-        <p className={css.subtitle}>Stay connected! We are always ready to help you.</p>
+        <p className={css.subtitle}>
+          Stay connected! We are always ready to help you.
+        </p>
         <form onSubmit={handleSubmit} className={css.form}>
           <div className={css.field}>
-            <label htmlFor="name" className={css.label}>
-              Name*
-            </label>
+            <label htmlFor="name" className={css.label}></label>
             <input
               id="name"
               type="text"
@@ -60,9 +60,7 @@ const BookingForm = (_props: BookingFormProps) => {
             />
           </div>
           <div className={css.field}>
-            <label htmlFor="email" className={css.label}>
-              Email*
-            </label>
+            <label htmlFor="email" className={css.label}></label>
             <input
               id="email"
               type="email"
@@ -74,9 +72,7 @@ const BookingForm = (_props: BookingFormProps) => {
             />
           </div>
           <div className={css.field}>
-            <label htmlFor="date" className={css.label}>
-              Booking date*
-            </label>
+            <label htmlFor="date" className={css.label}></label>
             <input
               id="date"
               type="date"
@@ -89,9 +85,7 @@ const BookingForm = (_props: BookingFormProps) => {
             />
           </div>
           <div className={css.field}>
-            <label htmlFor="comment" className={css.label}>
-              Comment
-            </label>
+            <label htmlFor="comment" className={css.label}></label>
             <textarea
               id="comment"
               value={comment}
@@ -101,7 +95,11 @@ const BookingForm = (_props: BookingFormProps) => {
               rows={4}
             />
           </div>
-          <button type="submit" disabled={isSubmitting} className={css.submitButton}>
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={css.submitButton}
+          >
             {isSubmitting ? "Sending..." : "Send"}
           </button>
         </form>
@@ -111,4 +109,3 @@ const BookingForm = (_props: BookingFormProps) => {
 };
 
 export default BookingForm;
-

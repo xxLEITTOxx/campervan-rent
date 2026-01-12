@@ -1,8 +1,10 @@
 .formWrapper {
-  padding: 28px;
-  background-color: #ffffff;
-  border-radius: 20px;
+
   border: 1px solid #dadde1;
+  border-radius: 10px;
+  padding: 44px;
+  width: 641px;
+  height: 588px;
 }
 
 .title {
@@ -16,14 +18,14 @@
 .subtitle {
   font-size: 16px;
   line-height: 1.5;
-  color: #475467;
+  color: #6c717b;
   margin: 0 0 24px 0;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .field {
@@ -41,15 +43,20 @@
 
 .input,
 .textarea {
-  padding: 16px;
+  padding: 12px 14px;
   border: 1px solid #eef0f2;
   border-radius: 10px;
   font-size: 16px;
   line-height: 1.5;
   color: #101828;
-  background-color: #f6f7f8;
+  background: #f7f7f7;
   outline: none;
   transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.textarea {
+  resize: none;
 }
 
 .input:focus,
@@ -62,9 +69,14 @@
   color: #475467;
 }
 
+.input {
+  min-height: 48px;
+}
+
 .textarea {
-  resize: vertical;
+
   font-family: inherit;
+  min-height: 120px;
 }
 
 .submitButton {

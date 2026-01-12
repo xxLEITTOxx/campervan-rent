@@ -65,34 +65,26 @@ export default function CamperDetailsPage() {
       <div className={css.header}>
         <div className={css.headerTop}>
           <h1 className={css.title}>{camper.name}</h1>
-          <div className={css.priceWrapper}>
-            <span className={css.price}>{formatPrice(camper.price)}</span>
-          </div>
         </div>
         <div className={css.meta}>
           <div className={css.rating}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFC531">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
-            <span>
+            <span className={css.rating_styling}>
               {camper.rating}({camper.reviews?.length || 0} Reviews)
             </span>
           </div>
           <div className={css.location}>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-            >
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
+            <svg width="16" height="16">
+              <use href="/sprite.svg#map-16" />
             </svg>
             <span>{camper.location}</span>
           </div>
         </div>
-        <p className={css.description}>{camper.description}</p>
+        <div className={css.priceWrapper}>
+          <span className={css.price}>{formatPrice(camper.price)}</span>
+        </div>
       </div>
 
       {camper.gallery && camper.gallery.length > 0 && (
@@ -113,6 +105,7 @@ export default function CamperDetailsPage() {
             ))}
         </div>
       )}
+      <p className={css.description}>{camper.description}</p>
       <div className={css.tabs}>
         <button
           type="button"
@@ -139,9 +132,9 @@ export default function CamperDetailsPage() {
             )}
           </div>
         </div>
-        <aside className={css.sidebar}>
+        <div className={css.sidebar}>
           <BookingForm camperName={camper.name} />
-        </aside>
+        </div>
       </div>
     </div>
   );

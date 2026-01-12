@@ -195,33 +195,30 @@ const Features = ({ camper }: FeaturesProps) => {
   ].filter((detail) => detail.value);
 
   return (
-    <div className={css.featuresStyling}>
-      <div className={css.features}>
-        {features.length > 0 && (
-          <div className={css.featuresList}>
-            {features.map((feature) => (
-              <div key={feature.name} className={css.featureTag}>
-                <span className={css.featureIcon}>{feature.icon}</span>
-                <span>{feature.name}</span>
-              </div>
-            ))}
-          </div>
-        )}
+    <div className={css.features}>
+      {features.length > 0 && (
+        <div className={css.featuresList}>
+          {features.map((feature) => (
+            <div key={feature.name} className={css.featureTag}>
+              <span className={css.featureIcon}>{feature.icon}</span>
+              <span>{feature.name}</span>
+            </div>
+          ))}
+        </div>
+      )}
 
-        {vehicleDetails.length > 0 && (
-          <div className={css.details}>
-            <h3 className={css.detailsTitle}>Vehicle details</h3>
-            <dl className={css.detailsList}>
-              {vehicleDetails.map((detail) => (
-                <div key={detail.label} className={css.detailItem}>
-                  <dt className={css.detailLabel}>{detail.label}</dt>
-                  <dd className={css.detailValue}>{detail.value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        )}
-      </div>
+      {vehicleDetails.length > 0 && (
+        <div className={css.details}>
+          <h3 className={css.detailsTitle}>Vehicle details</h3>
+
+          {vehicleDetails.map((detail) => (
+            <div key={detail.label} className={css.detailItem}>
+              <dt className={css.detailLabel}>{detail.label}</dt>
+              <dd className={css.detailValue}>{detail.value}</dd>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

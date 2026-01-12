@@ -2,28 +2,32 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 64px;
+  padding: 48px 64px;
 }
 
 .header {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .headerTop {
   /* display: flex;
   justify-content: space-between;
   align-items: flex-start; */
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
   color: #101828;
   margin: 0;
   flex: 1;
   padding-right: 16px;
+}
+
+.rating_styling {
+  text-decoration: underline;
 }
 
 .priceWrapper {
@@ -33,7 +37,7 @@
 }
 
 .price {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
   color: #101828;
@@ -44,7 +48,7 @@
 .meta {
   display: flex;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .rating,
@@ -69,13 +73,14 @@
   line-height: 1.5;
   color: #475467;
   margin: 0;
+  padding-bottom: 60px;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin-bottom: 44px;
+  margin-bottom: 28px;
 }
 
 .galleryItem {
@@ -93,8 +98,9 @@
 
 .content {
   display: flex;
-  gap: 24px;
-  align-items: flex-start;
+  gap: 40px;
+  justify-content: space-between;
+
 }
 
 .mainContent {
@@ -102,6 +108,7 @@
   max-width: 50%;
   min-width: 0;
   box-sizing: border-box;
+
 }
 
 .tabs {
@@ -148,12 +155,11 @@
 }
 
 .sidebar {
-  flex: 0 0 50%;
-  max-width: 50%;
+
   box-sizing: border-box;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .content {
     flex-direction: column;
   }
@@ -176,4 +182,4 @@
   line-height: 1.5;
   color: #6c717b;
   margin: 0;
-}
+} */
