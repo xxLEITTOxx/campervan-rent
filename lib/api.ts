@@ -1,8 +1,12 @@
 import axios from "axios";
 import type { Camper, CamperFilters } from "@/types/camper";
 
+const baseURL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || process.env.API_BASE_URL ||
+  "https://travel-trucks-backend-gv9o.onrender.com/";
+
 const api = axios.create({
-  baseURL: "https://travel-trucks-backend-gv9o.onrender.com/",
+  baseURL,
   headers: {
     "Content-Type": "application/json",
   },
