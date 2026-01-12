@@ -43,6 +43,7 @@
 
 .navigation a {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   color: #475467;
   text-decoration: none;
@@ -57,13 +58,3 @@
 .navigation a.active {
   color: #e44848;
 }
-
-/* .navigation a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -20px;
-  height: 1px;
-  background-color: #e44848;
-} */
